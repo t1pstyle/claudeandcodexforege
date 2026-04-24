@@ -22,4 +22,3 @@ redis==5.2.1
 
 # AI
 openai==1.57.0
-psycopg2-binary
