@@ -1,0 +1,24 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# Database
+sqlalchemy[asyncio]==2.0.36
+asyncpg==0.30.0
+alembic==1.14.0
+
+# Config
+pydantic-settings==2.7.0
+email-validator==2.2.0
+
+# Auth
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+pyjwt[crypto]==2.10.1
+python-multipart==0.0.19
+
+# Background tasks
+celery==5.4.0
+redis==5.2.1
+
+# AI
+openai==1.57.0

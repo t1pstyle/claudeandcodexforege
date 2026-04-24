@@ -1,0 +1,15 @@
+# Секреты — НИКОГДА не коммитим
+.env
+.env.local
+.env.production
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log

@@ -1,0 +1,30 @@
+# Виртуальное окружение
+venv/
+.venv/
+
+# Python кэш
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Секреты
+.env
+.env.local
+
+# Пользовательские загрузки — не коммитим
+uploads/
+
+# Редакторы
+.idea/
+.vscode/
+*.swp
+
+# macOS
+.DS_Store
+
+# Логи и временные файлы
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
