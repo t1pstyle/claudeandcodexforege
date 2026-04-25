@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Путь к .env в корне проекта: backend/app/core/config.py -> ClaudeProject1/
-BASE_DIR = Path(__file__).resolve().parents[2]
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 BACKEND_DIR = BASE_DIR / "backend"
 ENV_FILE = BASE_DIR / ".env"
 
@@ -12,7 +12,7 @@ ENV_FILE = BASE_DIR / ".env"
 UPLOADS_DIR = BACKEND_DIR / "uploads"
 
 # Куда положить файлы критериев ЕГЭ (task1_reading_aloud.md и т.д.)
-CRITERIA_DIR = BACKEND_DIR / "app" / "evaluation" / "criteria"
+CRITERIA_DIR = BASE_DIR / "evaluation/criteria"
 
 
 class Settings(BaseSettings):
