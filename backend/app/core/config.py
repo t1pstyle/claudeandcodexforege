@@ -3,7 +3,7 @@ from pathlib import Path
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # Путь к .env в корне проекта: backend/app/core/config.py -> ClaudeProject1/
-BASE_DIR = Path(__file__).resolve().parents[3]
+BASE_DIR = Path(__file__).resolve().parents[2]
 BACKEND_DIR = BASE_DIR / "backend"
 ENV_FILE = BASE_DIR / ".env"
 
