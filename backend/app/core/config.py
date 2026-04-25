@@ -7,6 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 BACKEND_DIR = BASE_DIR / "backend"
 ENV_FILE = BASE_DIR / ".env"
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 # Куда складываем загруженные аудио-файлы.
 # В проде это будет S3/Yandex Object Storage, сейчас — локальная папка.
 UPLOADS_DIR = BACKEND_DIR / "uploads"
